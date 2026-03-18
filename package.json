@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "@brave/brave-search-mcp-server": "^2.0.75",
+    "mcporter": "^0.7.3",
     "openclaw": "^2026.3.13"
   }
 }

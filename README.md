@@ -36,6 +36,20 @@ During onboarding, select:
 openclaw doctor
 ```
 
+## Brave Search (MCP)
+
+Brave Search is configured as an MCP server via mcporter. To enable it:
+
+1. Get a free API key from https://brave.com/search/api/
+2. Add your key to `.env`:
+   ```
+   BRAVE_API_KEY=your-actual-key
+   ```
+3. Verify the server is available:
+   ```bash
+   npx mcporter list brave-search --schema
+   ```
+
 ## Usage
 
 ```bash
@@ -44,4 +58,7 @@ openclaw gateway --port 18789
 
 # Check status
 openclaw status
+
+# Test Brave Search via mcporter
+npx mcporter call brave-search.brave_web_search query="hello world"
 ```
