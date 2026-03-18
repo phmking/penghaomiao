@@ -3,7 +3,9 @@
     "brave-search": {
       "command": "npx",
       "args": [
-        "@brave/brave-search-mcp-server"
+        "@brave/brave-search-mcp-server",
+        "--brave-api-key",
+        "${BRAVE_API_KEY}"
       ],
       "description": "Brave Search API for web search",
       "env": {
