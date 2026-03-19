@@ -1,0 +1,31 @@
+{
+  "gateway": {
+    "host": "127.0.0.1",
+    "port": 18789,
+    "logDir": "/tmp/openclaw"
+  },
+  "agent": {
+    "model": "openrouter/openrouter/auto"
+  },
+  "canvas": {
+    "mountPath": "/__openclaw__/canvas/",
+    "rootDir": "~/.openclaw/canvas"
+  },
+  "browser": {
+    "host": "127.0.0.1",
+    "port": 18791,
+    "auth": "token"
+  },
+  "healthMonitor": {
+    "intervalSeconds": 300,
+    "startupGraceSeconds": 60,
+    "channelConnectGraceSeconds": 120
+  },
+  "whatsapp": {
+    "providers": [
+      {
+        "name": "default"
+      }
+    ]
+  }
+}
