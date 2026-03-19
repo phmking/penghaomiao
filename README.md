@@ -10,16 +10,22 @@ This repository contains configuration for running the [OpenClaw](https://opencl
 
 ### Quick Start
 
-```bash
-chmod +x start-gateway.sh
-./start-gateway.sh
-```
-
-Or directly:
+**Option A — run directly (foreground, Ctrl+C to stop):**
 
 ```bash
 openclaw gateway
 ```
+
+**Option B — install as a macOS background service (recommended):**
+
+```bash
+chmod +x install-service.sh
+./install-service.sh
+```
+
+This registers the gateway with `launchd` so it persists across restarts and enables `openclaw gateway restart` / `stop` / `start`.
+
+> If you see **"Gateway service not loaded"** when using `restart`, it means the service has not been installed yet. Run Option B above first.
 
 ### Configuration
 
