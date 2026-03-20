@@ -1,6 +1,6 @@
 # penghaomiao
 
-OpenClaw AI Assistant setup with OpenRouter and WhatsApp.
+OpenClaw AI Assistant setup with MiniMax M2.1 and WhatsApp.
 
 ## Prerequisites
 
@@ -23,12 +23,13 @@ cp .env.example .env
 3. Run the onboarding wizard:
 
 ```bash
-openclaw onboard --install-daemon
+openclaw onboard --auth-choice minimax
 ```
 
 During onboarding, select:
-- **Model provider**: OpenRouter
+- **Model provider**: MiniMax M2.1
 - **Channel**: WhatsApp
+- **Endpoint**: Global (`api.minimax.io`)
 
 4. Verify the setup:
 
