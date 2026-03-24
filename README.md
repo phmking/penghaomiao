@@ -54,8 +54,11 @@ Brave Search is configured as an MCP server via mcporter. To enable it:
 ## Usage
 
 ```bash
+# Install the gateway service (required once, sets up the LaunchAgent)
+openclaw gateway install
+
 # Start the gateway
-openclaw gateway --port 18789
+openclaw gateway start
 
 # Check status
 openclaw status
