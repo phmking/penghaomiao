@@ -51,6 +51,18 @@ Brave Search is configured as an MCP server via mcporter. To enable it:
    npx mcporter list brave-search --schema
    ```
 
+## Lossless-Claw Plugin
+
+The [lossless-claw](https://www.npmjs.com/package/@martian-engineering/lossless-claw) plugin provides lossless context compaction for long-running sessions.
+
+Install:
+
+```bash
+openclaw plugins install @martian-engineering/lossless-claw
+```
+
+The plugin is configured in `~/.openclaw/openclaw.json` under `plugins.entries` and `plugins.allow`.
+
 ## Usage
 
 ```bash
